@@ -22,4 +22,10 @@ export const postsApi = createApi({
   }),
 });
 
+export const authApi = createApi({
+  reducerPath: "authApi",
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:4444/auth" }),
+  endpoints: (builder) => ({}),
+});
+
 export const { useFetchPostsQuery } = postsApi;
